@@ -1,0 +1,19 @@
+{% if srcset is defined %}
+  <picture class="img">
+    {% for bp, multipliers in srcset %}
+    <source srcset="
+      {% for multiplier, url in multipliers %}
+        {{ url }} {{ multiplier }}{% if not loop.last %}, {% endif %}
+        {# Always use the url for the biggest image as the deafult img src. #}
+        {% if loop.last %}{% set uri = url %}{% endif %}
+      {% endfor %}
+    " media="{{ bp }}">
+    {% endfor %}
+    {% include "@kalastatic/components/atoms/image/image.html.twig" %}
+  </picture>
+{% else %}
+  {% if uri %}
+    {% set class = class|default([])|merge(uri|split('.')|last) %}
+  {% endif %}
+  {% include "@kalastatic/components/atoms/image/image.html.twig" %}
+{% endif %}

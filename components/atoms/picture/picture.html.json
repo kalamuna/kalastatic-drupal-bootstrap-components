@@ -1,0 +1,48 @@
+{
+  "uri": "http://via.placeholder.com/450x325",
+  "width": "450",
+  "height": "325",
+  "alt": "this is some alt text",
+  "srcset": {
+    "(max-width: 479px)": {
+      "1x": [
+        "http://via.placeholder.com/450x325"
+      ],
+      "2x": [
+        "http://via.placeholder.com/450x325"
+      ]
+    },
+    "(min-width: 480px) and (max-width: 767px)": {
+      "1x": [
+        "http://via.placeholder.com/450x325"
+      ],
+      "2x": [
+        "http://via.placeholder.com/450x325"
+      ]
+    },
+    "(min-width: 768px) and (max-width: 991px)": {
+      "1x": [
+        "http://via.placeholder.com/450x325"
+      ],
+      "2x": [
+        "http://via.placeholder.com/450x325"
+      ]
+    },
+    "(min-width: 992px) and (max-width: 1199px)": {
+      "1x": [
+        "http://via.placeholder.com/450x325"
+      ],
+      "2x": [
+        "http://via.placeholder.com/450x325"
+      ]
+    },
+    "(min-width: 1200px)": {
+      "1x": [
+        "http://via.placeholder.com/450x325"
+      ],
+      "2x": [
+        "http://via.placeholder.com/450x325"
+      ]
+    }
+  }
+}
