@@ -1,0 +1,30 @@
+{
+  "name": "@kalamuna/kalastatic-components",
+  "version": "0.1.0",
+  "license": "GPL-2.0",
+  "private": true,
+  "scripts": {
+    "test": "kalastatic build",
+    "start": "kalastatic start",
+    "deploy": "npm run deploy:gitignore && git add -A && npm run deploy:push",
+    "deploy:gitignore": "cp -f .gitignore-deploy .gitignore",
+    "deploy:push": "grunt buildcontrol:deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kalamuna/kalastatic-components.git"
+  },
+  "config": {
+    "deploy": {}
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-build-control": "^0.7.1",
+    "grunt-cli": "^1.2.0"
+  },
+  "dependencies": {
+    "kalastatic": "kalamuna/kalastatic#master",
+    "twig-drupal-filters": "^0.2.1",
+    "kstat-kss-builder": "kalamuna/kstat-kss-builder"
+  }
+}
