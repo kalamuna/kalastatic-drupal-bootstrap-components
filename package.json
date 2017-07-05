@@ -1,0 +1,19 @@
+{
+  "name": "kalastatic-components",
+  "version": "0.0.1",
+  "description": "Reusable component library for use with KalaStatic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalamuna/kalastatic-components.git"
+  },
+  "author": "Josh Walker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalamuna/kalastatic-components/issues"
+  },
+  "homepage": "https://github.com/kalamuna/kalastatic-components#readme"
+}
