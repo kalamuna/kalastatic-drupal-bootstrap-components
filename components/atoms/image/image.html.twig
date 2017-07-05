@@ -1,0 +1,9 @@
+<img
+  src="{{ uri }}"
+  class="{{ class|join(' ') }}"
+  {% for attribute in ['alt', 'title', 'width', 'height'] %}
+    {% if _context[attribute] %}
+      {{ attribute }}="{{ _context[attribute] }}"
+    {% endif %}
+  {% endfor %}
+>
