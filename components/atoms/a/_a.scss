@@ -1,0 +1,23 @@
+/**
+ * Anchor tag
+ *
+ * An vanilla link without a class.
+ *
+ * Markup: a.html.twig
+ *
+ * Styleguide: markup.a
+ */
+
+%a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+a {
+  @extend %a;
+}
