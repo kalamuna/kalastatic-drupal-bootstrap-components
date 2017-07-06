@@ -1,0 +1,18 @@
+<video
+id="video-{{ vid }}"
+class="video-js vjs-default-skin"
+preload="{{ preload ?: "auto" }}"
+loop="{{ loop ?: "false" }}"
+autoplay="{{ autoplay ?: "false" }}"
+width="{{ width }}"
+height="{{ height }}"
+data-setup='{
+  "sources": [
+    {% for source in sources %}
+    {
+      "type": "video/{{ source.type }}",
+      "src": "{{ source.src }}"
+    }
+    {% endfor %}
+  ]}'
+>

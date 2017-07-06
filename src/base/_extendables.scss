@@ -1,0 +1,43 @@
+%center-h {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+%center-v {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  * > & {
+    position: relative;
+  }
+}
+
+%list--reset {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+%inline_block_list {
+  @extend %list--reset;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+  }
+}
