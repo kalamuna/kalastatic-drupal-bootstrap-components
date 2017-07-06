@@ -44,7 +44,7 @@ pluginOpts:
 # Settings for the Styleguide
 kss:
   css:
-  - "../styleguide/main.css"
+  - "../base/main.css"
   builder: "node_modules/kstat-kss-builder"
   js:
   - "http://vjs.zencdn.net/6.2.0/video.js"
