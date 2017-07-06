@@ -1,0 +1,52 @@
+# KalaStatic
+# This file configures how KalaStatic operates.
+
+# The source directory.
+base: "./"
+
+# Where to build kalastatic out to, relative to base.
+destination: "build/kalastatic"
+
+# What BrowserSync will consider the start page.
+bsIndex: kalastatic/browsersync-redirect.html
+
+# What BrowserSync will consider the web root.
+bsWebroot: build
+
+# Allows changing some of the plugin options.
+pluginOpts:
+  # The layouts will live in the templates directory.
+  metalsmith-jstransformer:
+    pattern: "!components/**"
+    layoutPattern: "templates/**"
+
+    # Options that are applied to just specific engines.
+    engineOptions:
+      # SASS settings.
+      scss:
+        outputStyle: nested
+        sourceMap: true
+        sourceComments: false
+        includePaths:
+        - "node_modules"
+        - "node_modules/fontface-source-sans-pro/scss"
+        - "src/styles"
+        - "node_modules/fontface-source-sans-pro/scss"
+      twig:
+        filters:
+          clean_id: twig-drupal-filters/filters/clean_id
+          clean_class: twig-drupal-filters/filters/clean_class
+          safe_join: twig-drupal-filters/filters/safe_join
+          t: twig-drupal-filters/filters/trans
+          bustcache: kalastatic-twig-filters/lib/filters/bustcache
+          slug: twig-drupal-filters/filters/clean_id
+
+# Settings for the Styleguide
+kss:
+  css:
+  - "../styleguide/main.css"
+  builder: "node_modules/kstat-kss-builder"
+  js:
+  - "http://vjs.zencdn.net/6.2.0/video.js"
+  title: "Kalastatic Components"
+  homepage: "styleguide/homepage.md"

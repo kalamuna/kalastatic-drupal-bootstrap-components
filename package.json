@@ -23,8 +23,9 @@
     "grunt-cli": "^1.2.0"
   },
   "dependencies": {
+    "fontface-source-sans-pro": "^2.0.10-alpha1",
     "kalastatic": "kalamuna/kalastatic#master",
-    "twig-drupal-filters": "^0.2.1",
-    "kstat-kss-builder": "kalamuna/kstat-kss-builder"
+    "kstat-kss-builder": "kalamuna/kstat-kss-builder",
+    "twig-drupal-filters": "^0.2.1"
   }
 }
