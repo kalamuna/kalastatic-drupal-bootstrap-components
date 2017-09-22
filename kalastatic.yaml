@@ -28,10 +28,10 @@ pluginOpts:
         sourceMap: true
         sourceComments: false
         includePaths:
-        - "node_modules"
-        - "node_modules/fontface-source-sans-pro/scss"
-        - "src/styles"
-        - "node_modules/fontface-source-sans-pro/scss"
+          - node_modules
+          - node_modules/fontface-source-sans-pro/scss
+          - node_modules/bootstrap-sass/assets/stylesheets
+          - src/styles
       twig:
         filters:
           clean_id: twig-drupal-filters/filters/clean_id
@@ -44,9 +44,9 @@ pluginOpts:
 # Settings for the Styleguide
 kss:
   css:
-  - "../base/main.css"
+    - "../base/main.css"
   builder: "node_modules/kstat-kss-builder"
   js:
-  - "http://vjs.zencdn.net/6.2.0/video.js"
+    - "http://vjs.zencdn.net/6.2.0/video.js"
   title: "Kalastatic Components"
   homepage: "styleguide/homepage.md"
