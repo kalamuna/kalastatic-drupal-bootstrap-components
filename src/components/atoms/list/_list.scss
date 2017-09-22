@@ -1,0 +1,28 @@
+/*
+A List
+
+An ordered or unordered list of content.
+
+Markup: list--ordered.html.twig
+
+Styleguide markup.list
+*/
+%list {
+  padding: 0 0 0 1.5em;
+  margin: 0 0 1em;
+
+  li {
+    margin: 0 0 0.3em;
+
+    ul {
+      margin: 0.3em 0 0;
+    }
+  }
+}
+
+.node__content ul,
+.node__content ol,
+#kssref-sod-content-ul ul,
+#kssref-sod-content-ol ol {
+  @extend %list;
+}
