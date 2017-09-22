@@ -1,0 +1,15 @@
+<nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+  <h2 id="system-breadcrumb" class="sr-only">Breadcrumb</h2>
+  <ol class="breadcrumb">
+    {% for item in breadcrumb %}
+      {% if loop.first %}
+        <li><a href="{{ item.url }}"><img aria-hidden="true" src="/kalastatic/images/icon--home.svg" width="16" height="12" alt="Home Icon"><span class="sr-only">{{ 'Home'|t }}</span></a></li>
+      {% elseif loop.last %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% else %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endif %}
+    {% endfor %}
+    <li class="active"><span>{{ title }}</span></li>
+  </ol>
+</nav>

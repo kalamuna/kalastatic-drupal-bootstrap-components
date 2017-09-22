@@ -1,0 +1,55 @@
+/*
+Breadcrumb
+
+Like Hansel und Grettle, we may want to retrace our steps.
+
+Markup: breadcrumb.html.twig
+
+Styleguide ui.breadcrumb
+
+*/
+
+.breadcrumb {
+  // Hide on mobile because it's usually the most pragmatic.
+  display: none;
+
+  @media(min-width: $screen-sm) {
+    display: block;
+  }
+}
+
+// Body tag here is to override @#*&^%&*! bootstrap.
+body .breadcrumb {
+  background: transparent;
+  padding-left: 0;
+
+
+  > li {
+    display: inline-block;
+
+    &:first-of-type {
+      position: relative;
+      top: -0.125em;
+    }
+
+    // Keeps line breaks in title from showing up in breadcrumb.
+    br {
+      display: none;
+    }
+
+    & + li::before {
+      content: "/" !important;
+      font-size: $font-size-base;
+    }
+  }
+
+  .active {
+    font-weight: 500;
+    color: $gray-dark;
+
+    span {
+      display: inline-block;
+      padding-left: 0.5em;
+    }
+  }
+}
