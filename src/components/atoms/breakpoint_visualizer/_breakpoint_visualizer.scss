@@ -1,0 +1,46 @@
+// This is a handy little utility that displays in the bottom left hand corner
+// which breakpoint is currently applicable at any given screen size. Obviously
+// you only want to use it during dev so once you hit production you will want
+// to comment out the inclusion of this file in main.scss.
+%breakpoint-visualizer {
+  position: relative;
+
+  &:before {
+    @media(min-width: $screen-xs) {
+      content: 'xs';
+      width: 25px;
+      height: 20px;
+      padding: 3px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      border-top-right-radius: 5px;
+    }
+
+    @media(min-width: $screen-sm) {
+      content: 'sm';
+    }
+
+    @media(min-width: $screen-md) {
+      content: 'md';
+    }
+
+    @media(min-width: $screen-lg) {
+      content: 'lg';
+    }
+
+    @media(min-width: $screen-xl) {
+      content: 'xl';
+    }
+  }
+}
+
+body {
+  // Comment out for production sites.
+  //@extend %breakpoint-visualizer;
+}
