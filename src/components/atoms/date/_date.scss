@@ -1,0 +1,26 @@
+/**
+ * Date
+ *
+ * Markup: date.html.twig
+ *
+ * Styleguide: markup.date
+ */
+
+.date {
+  span {
+    display: block;
+  }
+
+  &.date-range {
+    .enddate {
+      position: relative;
+
+      &::before {
+        content: "–";
+        position: absolute;
+        left: -0.25rem;
+        top: 0.5rem;
+      }
+    }
+  }
+}
