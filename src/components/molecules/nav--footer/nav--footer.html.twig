@@ -1,0 +1,7 @@
+<div id="nav--footer">
+  {% if drupal is defined %}
+    {{ content }}
+  {% else %}
+    {% include '@molecules/menu/menu.html.twig' with footer only %}
+  {% endif %}
+</div>

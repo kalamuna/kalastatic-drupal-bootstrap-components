@@ -1,0 +1,56 @@
+{
+  "primary": {
+    "items": {
+      "1": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 1",
+        "url": "#",
+        "class": [ "active" ],
+        "below": []
+      },
+      "2": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 2",
+        "url": "item-2.html",
+        "below": []
+      },
+      "3": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 3",
+        "url": "item-3.html",
+        "below": []
+      },
+      "4": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 4",
+        "url": "item-4.html",
+        "below": []
+      },
+      "5": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 5",
+        "url": "item-5.html",
+        "below": []
+      }
+    },
+    "attributes": {
+      "id": "nav--primary",
+      "class": []
+    }
+  }
+}

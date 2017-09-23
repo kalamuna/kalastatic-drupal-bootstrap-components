@@ -1,0 +1,117 @@
+{
+  "footer": {
+    "items": {
+      "1": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Accessibility Help",
+        "url": "#",
+        "below": {}
+      },
+      "2": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Integrity of Research Statements",
+        "url": "#",
+        "below": []
+      },
+      "3": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "UCSF Dental Center",
+        "url": "#",
+        "below": []
+      },
+      "4": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Connect on Social",
+        "url": "#",
+        "below": []
+      },
+      "5": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Media Inquiries",
+        "url": "#",
+        "below": []
+      },
+      "6": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "UCSF Directory",
+        "url": "#",
+        "below": []
+      },
+      "7": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Contact Us",
+        "url": "#",
+        "below": []
+      },
+      "8": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Staff Resources",
+        "url": "#",
+        "below": []
+      },
+      "9": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "UC Policy on Sexual Harassment and Sexual Violence",
+        "url": "#",
+        "below": []
+      },
+      "10`": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "FAQs",
+        "url": "#",
+        "below": []
+      },
+      "11": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "UCSF Office of Diversity",
+        "url": "#",
+        "below": []
+      },
+      "12": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "UCSF Police Clery Security Report",
+        "url": "#",
+        "below": []
+      }
+    },
+    "attributes": {
+      "class": []
+    }
+  }
+}
