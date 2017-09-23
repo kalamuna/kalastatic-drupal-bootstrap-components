@@ -1,0 +1,17 @@
+/**
+ * Footer navigation
+ *
+ * Site footer navigation.
+ *
+ * Markup: nav--footer.html.twig
+ *
+ * Styleguide: navigation.nav--footer
+ */
+
+%nav--footer {
+  @extend .clearfix;
+}
+
+#nav--footer {
+  @extend %nav--footer;
+}

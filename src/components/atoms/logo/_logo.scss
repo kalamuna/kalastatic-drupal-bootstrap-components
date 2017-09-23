@@ -1,0 +1,32 @@
+/*
+Logo
+
+Site logo.
+
+Markup: logo.html.twig
+
+Styleguide markup.logo
+*/
+
+%logo {
+  h1 {
+    margin-top: 0;
+  }
+
+  a {
+    display: block;
+
+    span {
+      @extend .sr-only;
+    }
+  }
+
+  svg {
+    width: 242px;
+    height: 66px;
+  }
+}
+
+#logo {
+  @extend %logo;
+}

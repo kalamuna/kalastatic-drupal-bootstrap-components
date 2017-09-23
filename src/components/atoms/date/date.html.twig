@@ -1,0 +1,16 @@
+<time class="date{% if date.start is defined and date.end is defined %} date-range{% endif %}">
+  {% if date.start is defined %}
+    <div class="startdate">
+      <span class="year">{{ date.start|date("Y") }}</span>
+      <span class="month">{{ date.start|date("M") }}</span>
+      <span class="day">{{ date.start|date("d") }}</span>
+    </div>
+  {% endif %}
+  {% if date.end is defined %}
+    <div class="enddate">
+      <span class="year">{{ date.end|date("Y") }}</span>
+      <span class="month">{{ date.end|date("M") }}</span>
+      <span class="day">{{ date.end|date("d") }}</span>
+    </div>
+  {% endif %}
+</time>

@@ -1,0 +1,18 @@
+/**
+ * Secondary navigation
+ *
+ * Secondary navigation.
+ *
+ * Markup: nav--secondary.html.twig
+ *
+ * Styleguide: navigation.nav--secondary
+ */
+
+%nav--secondary {
+  @extend .nav;
+  @extend .navbar-nav;
+}
+
+#nav--secondary {
+  @extend %nav--secondary;
+}

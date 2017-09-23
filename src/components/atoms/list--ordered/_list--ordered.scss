@@ -1,0 +1,18 @@
+/*
+Ordered List
+
+An ordered list of content.
+
+Markup: list--ordered.html.twig
+
+Styleguide markup.ol
+*/
+
+%list--ordered {
+  padding: 0 0 0 1.8em;
+}
+
+.node__content ol,
+#kssref-sod-content-ol ol {
+  @extend %list--ordered;
+}

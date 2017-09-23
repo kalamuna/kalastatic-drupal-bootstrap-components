@@ -26,6 +26,7 @@
     "fontface-source-sans-pro": "^2.0.10-alpha1",
     "kalastatic": "kalamuna/kalastatic#master",
     "kstat-kss-builder": "kalamuna/kstat-kss-builder",
-    "twig-drupal-filters": "^0.2.1"
+    "twig-drupal-filters": "^0.2.1",
+    "bootstrap-sass": "^3.3.7"
   }
 }
