@@ -34,10 +34,10 @@
         {% if drupal is defined %}
           {{ links }}
         {% else %}
-          {% include "@atoms/link--icon/link--icon.html.twig" with links|first only %}
+          {% include "@atoms/a/a.html.twig" with links|first only %}
         {% endif %}
       {% endblock %}
     </div>
-    
+
   </div>
 </div>
