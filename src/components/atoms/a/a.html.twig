@@ -1,1 +1,7 @@
-<a href="{{ href }}">{{ text }}</a>
+<a href="{{ url }}" class="{{ class|join(" ") }}"
+{% for attribute in attributes %}
+  {{ attribute.name }}="{{ attribute.value }}"
+{% endfor %}
+>
+  {{ text }}
+</a>
