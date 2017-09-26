@@ -63,6 +63,7 @@ Styleguide markup
 
 // Atoms.
 @import '../components/atoms/a/a';
+@import '../components/atoms/button/button';
 @import '../components/atoms/breakpoint_visualizer/breakpoint_visualizer';
 @import '../components/atoms/date/date';
 @import '../components/atoms/image/image';
@@ -75,3 +76,8 @@ Styleguide markup
 
 // Molecules.
 @import '../components/molecules/breadcrumb/breadcrumb';
+@import '../components/molecules/hero/hero';
+@import '../components/molecules/nav--footer/nav--footer';
+@import '../components/molecules/nav--primary/nav--primary';
+@import '../components/molecules/nav--secondary/nav--secondary';
+@import '../components/molecules/tout/tout';
