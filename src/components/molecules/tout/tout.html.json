@@ -1,0 +1,12 @@
+{
+  "title": "This is a tout",
+  "text": "Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+  "image": {
+    "uri": "http://lorempixel.com/400/200/sports/"
+  },
+  "links": [{
+    "text": "Read more",
+    "url": "http://go.gl",
+    "class": ["link--icon"]
+  }]
+}
