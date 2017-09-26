@@ -13,7 +13,9 @@
   </picture>
 {% else %}
   {% if uri %}
-    {% set class = class|default([])|merge(uri|split('.')|last) %}
+    {% set args = uri|split('/')|last %}
+    {% set ext = args|split('.')|last %}
+    {% set class = class|default([])|merge([ext]) %}
   {% endif %}
   {% include "@kalastatic/components/atoms/image/image.html.twig" %}
 {% endif %}
