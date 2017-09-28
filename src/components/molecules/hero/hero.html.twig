@@ -1,0 +1,26 @@
+{% extends '@molecules/tout/tout.html.twig' %}
+{% set component_name = 'hero' %}
+
+{% block tout__content %}
+  {% if title %}
+    <h3 class="{{ component_name }}__title">{{ title }}</h3>
+  {% endif %}
+
+  {% if subtitle %}
+    <div class="{{ component_name }}__subtitle">
+      {{ subtitle }}
+    </div>
+  {% endif %}
+
+  {% if text %}
+    <div class="{{ component_name }}__blurb">
+      {{ text }}
+    </div>
+  {% endif %}
+
+  {% if drupal is defined %}
+    {{ links|first }}
+  {% else %}
+    {% include "@atoms/a/a.html.twig" with links|first only %}
+  {% endif %}
+{% endblock %}

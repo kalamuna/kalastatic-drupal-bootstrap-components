@@ -1,0 +1,57 @@
+{% set component_name = component_name|default('tout') %}
+<div class="{{ component_name }}{% if class %} {{ class|join(' ') }}{% endif %}">
+  <div class="{{ component_name }}__wrapper">
+
+    {% if image or picture %}
+      <div class="{{ component_name }}__media">
+        {% block image %}
+          {% if image %}
+            <div class="image">
+              {% if drupal is defined %}
+                {{ image }}
+              {% else %}
+                {% include '@atoms/image/image.html.twig' with image only %}
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if picture %}
+            <div class="picture">
+              {% if drupal is defined %}
+                {{ image }}
+              {% else %}
+                {% include '@atoms/picture/picture.html.twig' with picture only %}
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endblock %}
+      </div>
+    {% endif %}
+
+    <div class="{{ component_name }}__content">
+      {% block tout__content %}
+        {% if title %}
+          <h3 class="{{ component_name }}__title">{{ title }}</h3>
+        {% endif %}
+
+        {% if text %}
+          <div class="{{ component_name }}__blurb">
+            {{ text }}
+          </div>
+        {% endif %}
+        
+        {% if links %}
+          <div class="{{ component_name }}__cta">
+            {% block tout__cta %}
+              {% if drupal is defined %}
+                {{ links }}
+              {% else %}
+                {% include "@atoms/a/a.html.twig" with links|first only %}
+              {% endif %}
+            {% endblock %}
+          </div>
+        {% endif %}
+    {% endblock %}
+    </div>
+
+  </div>
+</div>

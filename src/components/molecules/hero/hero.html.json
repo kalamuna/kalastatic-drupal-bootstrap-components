@@ -1,0 +1,16 @@
+{
+  "title": "This website is the best in the universe!",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+  "subtitle": "This is a subtitle",
+  "picture": {
+    "uri": "http://lorempixel.com/1920/680/cats/",
+    "width": "450",
+    "height": "325",
+    "alt": "this is some alt text"
+  },
+  "links": [{
+    "class": ["button"],
+    "url": "http://go.gl",
+    "text": "Click for more"
+  }]
+}

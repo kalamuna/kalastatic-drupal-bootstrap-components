@@ -1,0 +1,29 @@
+/**
+ * Tout
+ *
+ * A tout with a button.
+ *
+ * Markup: tout.html.twig
+ *
+ * Styleguide: content.tout
+ */
+
+%tout {
+  @extend %tout;
+
+  .tout__content {
+    padding: 2em;
+  }
+
+  .tout__media {
+    img {
+      @extend .img-responsive;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.tout {
+ @extend %tout;
+}

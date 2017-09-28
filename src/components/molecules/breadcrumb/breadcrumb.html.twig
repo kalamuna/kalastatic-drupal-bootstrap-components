@@ -3,7 +3,7 @@
   <ol class="breadcrumb">
     {% for item in breadcrumb %}
       {% if loop.first %}
-        <li><a href="{{ item.url }}"><img aria-hidden="true" src="/kalastatic/images/icon--home.svg" width="16" height="12" alt="Home Icon"><span class="sr-only">{{ 'Home'|t }}</span></a></li>
+        <li><a href="{{ item.url }}"><span aria-hidden="true" width="16" height="12" alt="Home Icon">&#127968;</span><span class="sr-only">{{ 'Home'|t }}</span></a></li>
       {% elseif loop.last %}
         <li><a href="{{ item.url }}">{{ item.text }}</a></li>
       {% else %}

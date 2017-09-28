@@ -1,0 +1,85 @@
+/*
+Hero
+
+Heroic tout.
+
+Markup: hero.html.twig
+
+Styleguide content.hero
+*/
+
+%hero {
+  max-width: $screen-lg - $grid-gutter-width;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  img {
+    @extend .img-responsive;
+    width: 100%;
+  }
+
+  .hero__title {
+    font-weight: 600;
+    font-size: $font-size-h3;
+
+    @media(min-width: $screen-sm) {
+      font-size: $font-size-h2;
+    }
+  }
+
+  .hero__subtitle {
+    font-size: $font-size-h4;
+    font-weight: 600;
+
+    @media(min-width: $screen-sm) {
+      font-size: $font-size-h3;
+    }
+  }
+
+  .hero__text {
+    margin-top: 0.5em;
+  }
+
+  .button {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hero__content {
+    background-color: $gray-lighter;
+    padding: 1.5rem;
+
+    @media(min-width: $screen-sm) {
+      padding: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    @media(min-width: $screen-md) {
+      width: 50%;
+      position: absolute;
+      top: 6rem;
+      right: 0;
+    }
+
+    @media(min-width: $screen-lg) {
+      max-width: 34em;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 200;
+    }
+
+    a {
+      color: $c--white;
+    }
+  }
+}
+
+.hero {
+  @extend %hero;
+}
