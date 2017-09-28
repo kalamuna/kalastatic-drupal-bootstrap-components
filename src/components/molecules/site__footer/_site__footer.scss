@@ -1,0 +1,41 @@
+/**
+ * Footer
+ *
+ * The footer of the site.
+ *
+ * Markup: site__footer.html.twig
+ *
+ * Styleguide: ui.site__footer
+ */
+%site__footer {
+  @extend .layout--1-up;
+  background-color: $c__teal;
+  color: $c__white;
+
+  a {
+    color: $c__white;
+  }
+
+  .subfooter {
+    padding-top: 0.75em;
+    padding-bottom: 1em;
+    border-top: 1px $gray-mid solid;
+    font-size: 0.875em;
+
+    li {
+      display: inline-block;
+      width: 32.33333%;
+    }
+  }
+
+  .copyright {
+    @extend .col-xs-12;
+    font-size: 0.875em;
+    padding-top: 0.75em;
+    padding-bottom: 1.5em;
+  }
+}
+
+#footer {
+  @extend %site__footer;
+}

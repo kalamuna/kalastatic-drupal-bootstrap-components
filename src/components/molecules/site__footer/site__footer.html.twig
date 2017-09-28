@@ -1,0 +1,12 @@
+<footer id="footer">
+  <div>
+    <div>
+      {% if drupal is defined %}
+          {{ elements.NAME_OF_FOOTER_NAV_BLOCK }}
+      {% else %}
+        {% include '@molecules/nav--footer/nav--footer.html.twig' with navigation.footer %}
+      {% endif %}
+    </div>
+    <div class="copyright">© 2017 Kalamuna</div>
+  </div>
+</footer>

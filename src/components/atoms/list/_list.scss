@@ -21,8 +21,6 @@ Styleguide markup.list
 }
 
 .node__content ul,
-.node__content ol,
-#kssref-sod-content-ul ul,
-#kssref-sod-content-ol ol {
+.node__content ol {
   @extend %list;
 }

@@ -1,0 +1,19 @@
+/**
+ * Header search
+ *
+ * Search form in the site header.
+ *
+ * Markup: header__search.html.twig
+ *
+ * Styleguide: ui.header__search
+ */
+
+%header__search {
+  h2 {
+    @extend .sr-only;
+  }
+}
+
+#header .search-block-form {
+  @extend %header__search;
+}
