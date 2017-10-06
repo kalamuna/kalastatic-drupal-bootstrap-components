@@ -17,7 +17,7 @@
 
   .tout__media {
     img {
-      @extend .img-responsive;
+      @extend .img-fluid;
       width: 100%;
       height: auto;
     }

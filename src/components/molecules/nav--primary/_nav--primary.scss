@@ -12,7 +12,7 @@
   @extend .nav;
   @extend .navbar-nav;
 
-  @media(min-width: $screen-sm) {
+  @include media-breakpoint-up(xs) {
     display: flex;
     flex-grow: 1;
   }
@@ -21,14 +21,14 @@
     margin: 0;
     flex-grow: 1;
 
-    @media(min-width: $screen-sm) {
+    @include media-breakpoint-up(xs) {
       text-align: center;
     }
 
     > a {
       font-size: $font-size-base + 2;
 
-      @media(min-width: $screen-lg) {
+      @include media-breakpoint-up(lg) {
         max-width: inherit;
       }
     }

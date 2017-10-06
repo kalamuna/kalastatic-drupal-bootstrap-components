@@ -12,23 +12,23 @@
   .nav__container {
     @extend .clearfix;
     overflow: hidden;
-    max-width: $screen-lg;
+    max-width: grid-breakpoints(lg);
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
 
-    @media(min-width: $screen-md) {
+    @include media-breakpoint-up(md) {
       display: flex;
     }
 
-    @media (min-width: $screen-lg + $grid-gutter-width) {
+    @media (min-width: grid-breakpoints(lg) + $grid-gutter-width) {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
   .navbar-header {
-    @media(min-width: $screen-lg) {
+    @include media-breakpoint-up(lg) {
       margin-left: $grid-gutter-width / 2;
     }
   }
@@ -39,14 +39,14 @@
     background-color: $c__white !important;
   }
 
-  @media(min-width: $screen-md) {
+  @include media-breakpoint-up(md) {
     .navbar-collapse {
       padding-right: 0;
     }
   }
 
   #navigation {
-    @media(min-width: $screen-md) {
+    @include media-breakpoint-up(md) {
       display: flex !important;
       flex-wrap: wrap;
       justify-content: flex-end;

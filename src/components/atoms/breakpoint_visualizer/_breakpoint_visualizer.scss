@@ -6,7 +6,7 @@
   position: relative;
 
   &:before {
-    @media(min-width: $screen-xs) {
+    @include media-breakpoint-up(xs) {
       content: 'xs';
       width: 25px;
       height: 20px;
@@ -22,19 +22,19 @@
       border-top-right-radius: 5px;
     }
 
-    @media(min-width: $screen-sm) {
+    @include media-breakpoint-up(xs) {
       content: 'sm';
     }
 
-    @media(min-width: $screen-md) {
+    @include media-breakpoint-up(md) {
       content: 'md';
     }
 
-    @media(min-width: $screen-lg) {
+    @include media-breakpoint-up(lg) {
       content: 'lg';
     }
 
-    @media(min-width: $screen-xl) {
+    @include media-breakpoint-up(xl) {
       content: 'xl';
     }
   }
