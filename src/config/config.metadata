@@ -1,0 +1,21 @@
+---
+title: "Kalathings"
+description: Things are fun!
+
+stylesheets:
+  - 'styles/main.css'
+
+scripts:
+  header:
+    kalastatic:
+      - vendor/jquery/dist/jquery.js
+      - vendor/jquery-once/jquery.once.min.js
+    all:
+      - vendor/bootstrap/bootstrap.js
+      - vendor/matchheight/dist/jquery.matchHeight-min.js
+
+  footer:
+    all:
+      - js/main.js
+
+---

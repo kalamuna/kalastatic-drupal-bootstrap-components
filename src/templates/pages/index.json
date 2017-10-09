@@ -1,0 +1,4 @@
+{
+  "layout": "templates/layouts/page.html.twig",
+  "hero": "@kalastatic/components/molecules/hero/hero.html.json"
+}
