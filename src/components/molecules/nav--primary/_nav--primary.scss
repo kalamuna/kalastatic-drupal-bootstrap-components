@@ -10,26 +10,15 @@
 
 %nav--primary {
   @extend .nav;
-  @extend .navbar-nav;
 
-  @include media-breakpoint-up(xs) {
-    display: flex;
-    flex-grow: 1;
-  }
+  li {
+    @extend .nav-item;
 
-  > li {
-    margin: 0;
-    flex-grow: 1;
+    a {
+      @extend .nav-link;
 
-    @include media-breakpoint-up(xs) {
-      text-align: center;
-    }
-
-    > a {
-      font-size: $font-size-base + 2;
-
-      @include media-breakpoint-up(lg) {
-        max-width: inherit;
+      &.menu-item--active-trail {
+        @extend .active;
       }
     }
   }
