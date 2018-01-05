@@ -1,13 +1,25 @@
-<div class="search-block-form block block-search container-inline" id="block-search" role="search">
-  <h2>{{ 'Search'|t }}</h2>
-  <a href="/search" class="search-toggle"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Toggle search input</span></a>
-  <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8">
-    <div class="form-item form-type-search form-item-keys">
-      <label for="search-text" class="visually-hidden">{{ 'Search'|t }}</label>
-      <input title="{{ 'Enter the terms you wish to search for.'|t }}" type="text" id="edit-keys" name="search-text" value="" size="15" maxlength="128" class="form-search">
+<div class="search-block-form contextual-region block block-search container-inline" data-drupal-selector="search-block-form"
+  id="block-kalastarter-search" role="search">
+
+  <h2>Search</h2>
+  <div data-contextual-id="block:block=kalastarter_search:langcode=en" class="contextual" role="form">
+    <button class="trigger focusable visually-hidden" type="button" aria-pressed="false">Open Search configuration options</button>
+    <ul class="contextual-links" hidden="">
+      <li class="block-configure">
+        <a href="/admin/structure/block/manage/kalastarter_search?destination=node">Configure block</a>
+      </li>
+    </ul>
+  </div>
+
+  <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8" data-drupal-form-fields="edit-keys">
+    <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+      <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys"
+        value="" size="15" maxlength="128" class="form-search">
     </div>
-    <div class="form-actions form-wrapper" id="edit-actions">
-      <input type="submit" id="edit-submit" value="{{ 'Search'|t }}" class="button form-submit">
+
+    <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+      <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit">
     </div>
   </form>
 </div>

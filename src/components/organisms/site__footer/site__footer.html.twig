@@ -2,7 +2,7 @@
   <div>
     <div>
       {% if drupal is defined %}
-          {{ elements.NAME_OF_FOOTER_NAV_BLOCK }}
+        {{ elements }}
       {% else %}
         {% include '@molecules/nav--footer/nav--footer.html.twig' with navigation.footer %}
       {% endif %}

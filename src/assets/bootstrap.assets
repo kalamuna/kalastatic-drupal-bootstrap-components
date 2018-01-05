@@ -1,0 +1,6 @@
+---
+source: node_modules/bootstrap/dist/js
+destination: vendors/bootstrap
+---
+
+Bring in all the Bootstrap JS components.

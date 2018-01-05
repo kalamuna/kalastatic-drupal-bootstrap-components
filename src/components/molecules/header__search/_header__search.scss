@@ -9,11 +9,46 @@
  */
 
 %header__search {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+    margin-left: 2rem;
+  }
+
   h2 {
-    @extend .sr-only;
+     @include sr-only;
+  }
+
+  form {
+    display: flex;
+
+    label {
+      @include sr-only;
+    }
+
+    .form-type-search {
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
+    }
+
+    .form-actions {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    
+    input {
+      &[type='search'] {
+        width: 100%;
+        padding: 0.3rem 0;
+      }
+    }
   }
 }
 
-#header .search-block-form {
+#header .block-search {
   @extend %header__search;
 }

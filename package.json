@@ -6,8 +6,10 @@
   "scripts": {
     "test": "kalastatic build",
     "start": "kalastatic start",
-    "deploy": "npm run deploy:gitignore && git add -A && npm run deploy:push",
-    "deploy:gitignore": "cp -f .gitignore-deploy .gitignore",
+    "predeploy": "npm i && composer install",
+    "deploy": "npm run deploy:gitignore && npm run deploy:removegit && git add -A && npm run deploy:push",
+    "deploy:gitignore": "mv .gitignore-deploy .gitignore",
+    "deploy:removegit": "find web -type d -name .git -exec rm -rf {} +",
     "deploy:push": "grunt buildcontrol:deploy"
   },
   "repository": {
@@ -20,13 +22,20 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-build-control": "^0.7.1",
-    "grunt-cli": "^1.2.0"
+    "grunt-cli": "^1.2.0",
+    "kalastatic": "^3.1.0",
+    "sass-lint": "^1.12.0"
   },
   "dependencies": {
-    "fontface-source-sans-pro": "^2.0.10-alpha1",
-    "kalastatic": "kalamuna/kalastatic#master",
-    "kstat-kss-builder": "kalamuna/kstat-kss-builder",
-    "twig-drupal-filters": "^0.2.1",
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap": "^4.0.0-beta.3",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.2",
+    "jquery": "^3.2.1",
+    "jquery-once": "^2.2.0",
+    "kalastatic-twig-filters": "^0.2.0",
+    "kss-bootstrap": "^4.0.0",
+    "kstat-kss-builder": "^0.13.4",
+    "popper.js": "^1.12.9",
+    "twig-drupal-filters": "^1.1.0"
   }
 }

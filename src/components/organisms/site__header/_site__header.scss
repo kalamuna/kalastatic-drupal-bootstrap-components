@@ -1,7 +1,7 @@
 /**
  * Header
  *
- * The footer of the site.
+ * The header of the site.
  *
  * Markup: site__header.html.twig
  *
@@ -9,68 +9,35 @@
  */
 
 %site__header {
-  .nav__container {
-    @extend .clearfix;
-    overflow: hidden;
-    max-width: grid-breakpoints(lg);
-    margin: 0 auto;
-    padding-left: 1em;
-    padding-right: 1em;
+  background-color: $gray-100;
 
+  .navbar {
+    @include media-breakpoint-up(md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  #site-navigation {
     @include media-breakpoint-up(md) {
       display: flex;
-    }
-
-    @media (min-width: grid-breakpoints(lg) + $grid-gutter-width) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  .navbar-header {
-    @include media-breakpoint-up(lg) {
-      margin-left: $grid-gutter-width / 2;
-    }
-  }
-
-  .navbar-default {
-    border: none;
-    border-radius: 0;
-    background-color: $c__white !important;
-  }
-
-  @include media-breakpoint-up(md) {
-    .navbar-collapse {
-      padding-right: 0;
-    }
-  }
-
-  #navigation {
-    @include media-breakpoint-up(md) {
-      display: flex !important;
       flex-wrap: wrap;
-      justify-content: flex-end;
-      align-content: flex-start;
-      padding-left: 100px;
     }
+  }
 
-    ul:first-of-type {
-      + ul {
-        margin-top: 1.5rem;
-      }
-    }
+  .menu--main {
+    flex-grow: 1;
+  }
 
+  #nav--primary {
+    flex-basis: 100%;
+  }
+
+  #nav--secondary {
+    flex-grow: 1;
   }
 }
 
 #header {
   @extend %site__header;
-
-  #logo {
-    margin-top: 3.5rem !important;
-  }
 }
 
-#header .search-block-form {
-  margin-top: 1.75rem;
-}

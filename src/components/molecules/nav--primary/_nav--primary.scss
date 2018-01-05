@@ -16,6 +16,8 @@
 
     a {
       @extend .nav-link;
+      padding: 1rem;
+      font-weight: 600;
 
       &.menu-item--active-trail {
         @extend .active;
@@ -27,3 +29,4 @@
 #nav--primary {
   @extend %nav--primary;
 }
+

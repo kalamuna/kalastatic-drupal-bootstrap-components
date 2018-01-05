@@ -24,7 +24,7 @@ Styleguide content.hero
     font-weight: 600;
     font-size: $h3-font-size;
 
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
       font-size: $h2-font-size;
     }
   }
@@ -33,7 +33,7 @@ Styleguide content.hero
     font-size: $h4-font-size;
     font-weight: 600;
 
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
       font-size: $h3-font-size;
     }
   }
@@ -50,10 +50,10 @@ Styleguide content.hero
   }
 
   .hero__content {
-    background-color: $gray-200;
+    background-color: $gray-100;
     padding: 1.5rem;
 
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
       padding: 3rem;
       padding-bottom: 2rem;
     }
@@ -75,7 +75,7 @@ Styleguide content.hero
     }
 
     a {
-      color: $c--white;
+      color: $white;
     }
   }
 }

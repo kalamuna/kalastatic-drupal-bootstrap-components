@@ -11,27 +11,27 @@
  */
 
 %button-solid {
-  border: 1px solid $brand-primary;
-  background-color: $brand-primary;
-  color: $c--white;
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: $white;
 }
 
 %button-solid--invert {
-  background-color: $c--white;
-  color: $brand-primary !important;
-  border-color: $brand-primary;
+  background-color: $white;
+  color: $primary !important;
+  border-color: $primary;
 }
 
 %button-hollow {
   background-color: transparent;
-  color: $brand-primary !important;
-  border-color: $brand-primary;
+  color: $primary !important;
+  border-color: $primary;
 }
 
 %button-hollow--invert {
   background-color: transparent;
-  color: $c--white;
-  border-color: $c--white;
+  color: $white;
+  border-color: $white;
 }
 
 %button {
