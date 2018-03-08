@@ -1,0 +1,6 @@
+---
+source: node_modules/popper.js/dist/umd
+destination: vendors/popper.js
+---
+
+Bring in popper.

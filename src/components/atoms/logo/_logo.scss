@@ -14,7 +14,8 @@ Styleguide ui.logo
   }
 
   a {
-    display: block;
+    display: flex;
+    align-items: center;
 
     span {
       @extend .sr-only;
@@ -22,7 +23,7 @@ Styleguide ui.logo
   }
 
   svg {
-    width: 242px;
+    width: 66px;
     height: 66px;
   }
 }

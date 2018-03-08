@@ -6,7 +6,7 @@
         "is_collapsed": false,
         "in_active_trail": false,
         "attributes": [],
-        "title": "Accessibility Help",
+        "title": "Footer item 1",
         "url": "#",
         "below": {}
       },
@@ -15,7 +15,7 @@
         "is_collapsed": false,
         "in_active_trail": false,
         "attributes": [],
-        "title": "Integrity of Research Statements",
+        "title": "Footer item 2",
         "url": "#",
         "below": []
       },
@@ -24,7 +24,7 @@
         "is_collapsed": false,
         "in_active_trail": false,
         "attributes": [],
-        "title": "UCSF Dental Center",
+        "title": "Footer item 3",
         "url": "#",
         "below": []
       },
@@ -33,7 +33,7 @@
         "is_collapsed": false,
         "in_active_trail": false,
         "attributes": [],
-        "title": "Connect on Social",
+        "title": "Footer item 4",
         "url": "#",
         "below": []
       },
@@ -42,7 +42,7 @@
         "is_collapsed": false,
         "in_active_trail": false,
         "attributes": [],
-        "title": "Media Inquiries",
+        "title": "Footer item 5",
         "url": "#",
         "below": []
       },
@@ -51,61 +51,7 @@
         "is_collapsed": false,
         "in_active_trail": false,
         "attributes": [],
-        "title": "UCSF Directory",
-        "url": "#",
-        "below": []
-      },
-      "7": {
-        "is_expanded": false,
-        "is_collapsed": false,
-        "in_active_trail": false,
-        "attributes": [],
-        "title": "Contact Us",
-        "url": "#",
-        "below": []
-      },
-      "8": {
-        "is_expanded": false,
-        "is_collapsed": false,
-        "in_active_trail": false,
-        "attributes": [],
-        "title": "Staff Resources",
-        "url": "#",
-        "below": []
-      },
-      "9": {
-        "is_expanded": false,
-        "is_collapsed": false,
-        "in_active_trail": false,
-        "attributes": [],
-        "title": "UC Policy on Sexual Harassment and Sexual Violence",
-        "url": "#",
-        "below": []
-      },
-      "10`": {
-        "is_expanded": false,
-        "is_collapsed": false,
-        "in_active_trail": false,
-        "attributes": [],
-        "title": "FAQs",
-        "url": "#",
-        "below": []
-      },
-      "11": {
-        "is_expanded": false,
-        "is_collapsed": false,
-        "in_active_trail": false,
-        "attributes": [],
-        "title": "UCSF Office of Diversity",
-        "url": "#",
-        "below": []
-      },
-      "12": {
-        "is_expanded": false,
-        "is_collapsed": false,
-        "in_active_trail": false,
-        "attributes": [],
-        "title": "UCSF Police Clery Security Report",
+        "title": "Footer item 6",
         "url": "#",
         "below": []
       }

@@ -1,0 +1,6 @@
+---
+source: node_modules/jquery-once
+destination: vendors/jquery-once
+---
+
+Bring in jquery-once.

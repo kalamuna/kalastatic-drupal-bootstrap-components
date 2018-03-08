@@ -1,0 +1,9 @@
+%page {
+  > * {
+    @include make-container();
+  }
+}
+
+.layout-container {
+  @extend %page;
+}

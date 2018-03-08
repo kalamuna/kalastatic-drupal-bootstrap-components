@@ -1,24 +1,31 @@
 # KalaStatic
-# This file configures how KalaStatic operates.
+#
+# This file configures how KalaStatic operates. For information on the
+# configuration options, visit:
+#
+# https://github.com/kalamuna/kalastatic
+# 
+# NOTE: Replace all instances of THEMENAME with the name of your custom theme
 
 # The source directory.
-base: "./"
+source: web/themes/custom/THEMENAME/kalastatic/src
 
 # Where to build kalastatic out to, relative to base.
-destination: "build/kalastatic"
+destination: web/kalastatic
 
 # What BrowserSync will consider the start page.
 bsIndex: kalastatic/browsersync-redirect.html
 
 # What BrowserSync will consider the web root.
-bsWebroot: build
+bsWebroot: web
 
 # Allows changing some of the plugin options.
 pluginOpts:
   # The layouts will live in the templates directory.
   metalsmith-jstransformer:
+    # Do not process components as content pages.
     pattern: "!components/**"
-    layoutPattern: "templates/**"
+    layoutPattern: layouts/**
 
     # Options that are applied to just specific engines.
     engineOptions:
@@ -28,25 +35,66 @@ pluginOpts:
         sourceMap: true
         sourceComments: false
         includePaths:
-          - node_modules
-          - node_modules/fontface-source-sans-pro/scss
-          - node_modules/bootstrap-sass/assets/stylesheets
-          - src/styles
+          - node_modules/bootstrap/scss
+          - node_modules/font-awesome/scss
+          - web/themes/custom/THEMENAME/kalastatic/src/styles
+          - web/themes/custom/THEMENAME/kalastatic/src/components
+
+      # Twig settings.
       twig:
+        # Introduce the "kstat" Twig namespace.
+        namespaces:
+          kstat: web/themes/custom/THEMENAME/kalastatic/src
+          kalastatic: web/themes/custom/THEMENAME/kalastatic/src
+          atoms: web/themes/custom/THEMENAME/kalastatic/src/components/atoms
+          molecules: web/themes/custom/THEMENAME/kalastatic/src/components/molecules
+          organisms: web/themes/custom/THEMENAME/kalastatic/src/components/organisms
+          layouts: web/themes/custom/THEMENAME/kalastatic/src/components/layouts
+
+        # Mimic some of the Drupal 8 Twig filters.
         filters:
-          clean_id: twig-drupal-filters/filters/clean_id
           clean_class: twig-drupal-filters/filters/clean_class
+          clean_id: twig-drupal-filters/filters/clean_id
           safe_join: twig-drupal-filters/filters/safe_join
           t: twig-drupal-filters/filters/trans
-          bustcache: kalastatic-twig-filters/lib/filters/bustcache
-          slug: twig-drupal-filters/filters/clean_id
 
-# Settings for the Styleguide
 kss:
-  css:
-    - "../base/main.css"
   builder: "node_modules/kstat-kss-builder"
-  js:
-    - "http://vjs.zencdn.net/6.2.0/video.js"
-  title: "Kalastatic Components"
   homepage: "styleguide/homepage.md"
+  css: ../styles/main.css
+  js:
+    - ../vendors/jquery-once/jquery.once.min.js
+    - ../js/drupal_pre.js
+    - ../js/main.js
+    - ../js/drupal_post.js
+  source:
+    - node_modules/kss-bootstrap/styleguide/components/alert
+    - node_modules/kss-bootstrap/styleguide/components/badge
+    - node_modules/kss-bootstrap/styleguide/components/breadcrumb
+    - node_modules/kss-bootstrap/styleguide/components/btn-group
+    - node_modules/kss-bootstrap/styleguide/components/dropdown
+    - node_modules/kss-bootstrap/styleguide/components/jumbotron
+    - node_modules/kss-bootstrap/styleguide/components/label
+    - node_modules/kss-bootstrap/styleguide/components/list-group
+    - node_modules/kss-bootstrap/styleguide/components/media
+    - node_modules/kss-bootstrap/styleguide/components/nav
+    - node_modules/kss-bootstrap/styleguide/components/pagination
+    - node_modules/kss-bootstrap/styleguide/components/panel
+    - node_modules/kss-bootstrap/styleguide/components/progress
+    - node_modules/kss-bootstrap/styleguide/css/button
+    - node_modules/kss-bootstrap/styleguide/css/code
+    - node_modules/kss-bootstrap/styleguide/css/form
+    - node_modules/kss-bootstrap/styleguide/css/grid
+    - node_modules/kss-bootstrap/styleguide/css/helper
+    - node_modules/kss-bootstrap/styleguide/css/image
+    - node_modules/kss-bootstrap/styleguide/css/table
+    - node_modules/kss-bootstrap/styleguide/css/typography
+    - node_modules/kss-bootstrap/styleguide/javascript/carousel
+    - node_modules/kss-bootstrap/styleguide/javascript/collapse
+    - node_modules/kss-bootstrap/styleguide/javascript/dropdown
+    - node_modules/kss-bootstrap/styleguide/javascript/modal
+    - node_modules/kss-bootstrap/styleguide/javascript/popover
+    - node_modules/kss-bootstrap/styleguide/javascript/scrollspy
+    - node_modules/kss-bootstrap/styleguide/javascript/tooltip
+    - node_modules/kss-bootstrap/styleguide/sections
+    - web/themes/custom/THEMENAME/kalastatic

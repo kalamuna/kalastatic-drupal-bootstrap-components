@@ -1,0 +1,40 @@
+hero:
+  use: "@molecules/tout/tout.html.twig"
+  label: 'Tout'
+  description: 'A tout with a button.'
+  fields:
+    title:
+      type: 'text'
+      label: 'Title'
+      description: 'The title of the Tout molecule.'
+      preview: 'This is a tout'
+    text:
+      type: 'text'
+      label: 'Text'
+      description: 'The text content of the Tout component.'
+      preview: 'Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.'
+    image:
+      type: 'image'
+      label: 'Image'
+      description: 'The Tout image.'
+      preview:
+        type: 'pattern'
+        id: 'image'
+        fields:
+          uri: 'http://lorempixel.com/400/200/sports/'
+          alt: 'this is some alt text'
+          width: '400'
+          height: '200'
+    links:
+      type: 'link'
+      label: 'Links'
+      description: 'The links or CTAs for the Tout component.'
+      preview:
+        -
+          type: 'pattern'
+          id: 'a'
+          fields:
+            url: 'http://go.gl'
+            text: 'Read more'
+            class:
+              - 'link--icon'

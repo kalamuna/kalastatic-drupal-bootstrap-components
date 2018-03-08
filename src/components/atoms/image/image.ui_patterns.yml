@@ -1,0 +1,37 @@
+image:
+  use: "@atoms/image/image.html.twig"
+  label: 'Image'
+  description: 'A simple image atom.'
+  fields:
+    uri:
+      type: 'uri'
+      label: 'URI'
+      description: 'The "URI" of the Image atom.'
+      preview: 'http://placehold.it/350x150'
+    class:
+      type: 'text'
+      label: 'Classes'
+      description: 'The list of classes of the Image atom.'
+      preview:
+        - 'image-class1'
+        - 'image-class2'
+    alt:
+      type: 'text'
+      label: 'Alt attribute'
+      description: 'The "Alt" attribute of the Image atom.'
+      preview: 'Alt text'
+    title:
+      type: 'text'
+      label: 'Text attribute'
+      description: 'The "Text" attribute of the Image atom.'
+      preview: 'Title text'
+    width:
+      type: 'text'
+      label: 'Width attribute'
+      description: 'The "Width" attribute of the Image atom.'
+      preview: '350'
+    height:
+      type: 'text'
+      label: 'Height attribute'
+      description: 'The "Height" attribute of the Image atom.'
+      preview: '150'

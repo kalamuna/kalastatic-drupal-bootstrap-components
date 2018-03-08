@@ -1,0 +1,22 @@
+a:
+  use: "@atoms/a/a.html.twig"
+  label: 'Link'
+  description: 'A html link tag.'
+  fields:
+    url:
+      type: 'url'
+      label: 'URL'
+      description: 'The URL of the Link atom.'
+      preview: '#'
+    text:
+      type: 'text'
+      label: 'Label'
+      description: 'The label of the Link atom.'
+      preview: 'Go to location'
+    class:
+      type: 'text'
+      label: 'Classes'
+      description: 'The list of classes of the Link atom.'
+      preview:
+        - 'link-class1'
+        - 'link-class2'

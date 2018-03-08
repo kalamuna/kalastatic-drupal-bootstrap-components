@@ -1,29 +1,20 @@
 <header id="header" role="banner">
-  <nav class="navbar navbar-default">
-    <div class="nav__container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  <nav class="navbar navbar-expand-md navbar-light">
+    {% include '@atoms/logo/logo.html.twig' %}
+    {% include '@atoms/hamburger/hamburger.html.twig' %}
 
-        {% include '@atoms/logo/logo.html.twig' %}
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navigation">
-        {% if drupal is defined %}
-          {{ elements.NAME_OF_SECONDARY_NAV_BLOCK }}
-          {{ elements.NAME_OF_PRIMARY_NAV_BLOCK }}
-        {% else %}
-          {% include "@molecules/nav--secondary/nav--secondary.html.twig" with navigation.secondary %}
-          {% include "@molecules/nav--primary/nav--primary.html.twig" with navigation.primary %}
-        {% endif %}
-        {% include '@molecules/header__search/header__search.html.twig' %}
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="site-navigation">
+      {% if drupal is defined %} 
+        {{ elements.THEMENAME_main_menu }} 
+        {{ elements.SECONDARYNAVBLOCK }} 
+        {{ elements.THEMENAME_search }}
+      {% else %} 
+        {% include '@molecules/nav--primary/nav--primary.html.twig' with navigation.primary %} 
+        {% include '@molecules/nav--secondary/nav--secondary.html.twig' with navigation.secondary %} 
+        {% include '@molecules/header__search/header__search.html.twig'%}
+      {% endif %}
+      <!-- /.navbar-collapse -->
+    </div>
   </nav>
 </header>

@@ -1,0 +1,43 @@
+hero:
+  use: "@molecules/hero/hero.html.twig"
+  label: 'Hero'
+  description: 'Heroic tout.'
+  fields:
+    title:
+      type: 'text'
+      label: 'Title'
+      description: 'The title of the Hero molecule.'
+      preview: 'This website is the best in the universe!'
+    subtitle:
+      type: 'text'
+      label: 'Subtitle'
+      description: 'The subtitle of the Hero molecule.'
+      preview: 'This is a subtitle'
+    text:
+      type: 'text'
+      label: 'Text'
+      description: 'The text content of the Hero component.'
+      preview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.'
+    image:
+      type: 'image'
+      label: 'Image'
+      description: 'The Heroic tout image.'
+      preview:
+        type: 'pattern'
+        id: 'image'
+        fields:
+          uri: 'http://lorempixel.com/400/200/nature/2'
+          alt: 'this is some alt text'
+          width: '450'
+          height: '325'
+    links:
+      type: 'link'
+      label: 'Links'
+      description: 'The links or CTAs for the Hero component.'
+      preview:
+        -
+          type: 'pattern'
+          id: 'a'
+          fields:
+            url: 'http://go.gl'
+            text: 'Click for more'

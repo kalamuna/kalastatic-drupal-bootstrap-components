@@ -10,9 +10,19 @@
 
 %nav--secondary {
   @extend .nav;
-  @extend .navbar-nav;
+  justify-content: flex-end;
+
+  li {
+    @extend .nav-item;
+    
+    a {
+      @extend .nav-link;
+      font-size: $font-size-sm;
+    }
+  }
 }
 
 #nav--secondary {
   @extend %nav--secondary;
 }
+

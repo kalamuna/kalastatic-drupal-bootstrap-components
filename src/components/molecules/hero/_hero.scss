@@ -9,32 +9,32 @@ Styleguide content.hero
 */
 
 %hero {
-  max-width: $screen-lg - $grid-gutter-width;
+  max-width: grid-breakpoints(lg) - $grid-gutter-width;
   margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 
   img {
-    @extend .img-responsive;
+    @extend .img-fluid;
     width: 100%;
   }
 
   .hero__title {
     font-weight: 600;
-    font-size: $font-size-h3;
+    font-size: $h3-font-size;
 
-    @media(min-width: $screen-sm) {
-      font-size: $font-size-h2;
+    @include media-breakpoint-up(sm) {
+      font-size: $h2-font-size;
     }
   }
 
   .hero__subtitle {
-    font-size: $font-size-h4;
+    font-size: $h4-font-size;
     font-weight: 600;
 
-    @media(min-width: $screen-sm) {
-      font-size: $font-size-h3;
+    @include media-breakpoint-up(sm) {
+      font-size: $h3-font-size;
     }
   }
 
@@ -50,22 +50,22 @@ Styleguide content.hero
   }
 
   .hero__content {
-    background-color: $gray-lighter;
+    background-color: $gray-100;
     padding: 1.5rem;
 
-    @media(min-width: $screen-sm) {
+    @include media-breakpoint-up(sm) {
       padding: 3rem;
       padding-bottom: 2rem;
     }
 
-    @media(min-width: $screen-md) {
+    @include media-breakpoint-up(md) {
       width: 50%;
       position: absolute;
       top: 6rem;
       right: 0;
     }
 
-    @media(min-width: $screen-lg) {
+    @include media-breakpoint-up(lg) {
       max-width: 34em;
     }
 
@@ -75,7 +75,7 @@ Styleguide content.hero
     }
 
     a {
-      color: $c--white;
+      color: $white;
     }
   }
 }

@@ -57,9 +57,9 @@ Styleguide markup
 */
 
 @import 'base/custom-bootstrap';
-
-@import 'base/variables';
-@import 'base/extendables';
+@import 'base/custom-variables';
+@import 'base/custom-extendables';
+@import 'font-awesome';
 
 // Atoms.
 @import 'atoms/a/a';
@@ -76,8 +76,17 @@ Styleguide markup
 
 // Molecules.
 @import 'molecules/breadcrumb/breadcrumb';
+@import 'molecules/header__search/header__search';
 @import 'molecules/hero/hero';
 @import 'molecules/nav--footer/nav--footer';
 @import 'molecules/nav--primary/nav--primary';
 @import 'molecules/nav--secondary/nav--secondary';
 @import 'molecules/tout/tout';
+
+// Organisms.
+@import 'organisms/site__header/site__header';
+@import 'organisms/site__footer/site__footer';
+
+// Layouts
+@import 'layouts/page/page';
+

@@ -10,12 +10,11 @@ scripts:
     kalastatic:
       - vendor/jquery/dist/jquery.js
       - vendor/jquery-once/jquery.once.min.js
-    all:
-      - vendor/bootstrap/bootstrap.js
-      - vendor/matchheight/dist/jquery.matchHeight-min.js
 
   footer:
     all:
+      - vendors/popper.js/popper.min.js
+      - vendors/bootstrap/bootstrap.min.js
       - js/main.js
 
 ---

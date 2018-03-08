@@ -13,7 +13,7 @@ Styleguide ui.breadcrumb
   // Hide on mobile because it's usually the most pragmatic.
   display: none;
 
-  @media(min-width: $screen-sm) {
+  @include media-breakpoint-up(sm) {
     display: block;
   }
 }
@@ -45,7 +45,7 @@ body .breadcrumb {
 
   .active {
     font-weight: 500;
-    color: $gray-dark;
+    color: colors(gray-dark);
 
     span {
       display: inline-block;
