@@ -60,6 +60,7 @@ pluginOpts:
 
 kss:
   builder: "node_modules/kstat-kss-builder"
+  homepage: "styleguide/homepage.md"
   css: ../styles/main.css
   js:
     - ../vendors/jquery-once/jquery.once.min.js
