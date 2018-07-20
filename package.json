@@ -18,15 +18,14 @@
     "deploy": {}
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-build-control": "^0.7.1",
     "grunt-cli": "^1.2.0"
   },
   "dependencies": {
     "fontface-source-sans-pro": "^2.0.10-alpha1",
-    "kalastatic": "kalamuna/kalastatic#master",
-    "kstat-kss-builder": "kalamuna/kstat-kss-builder",
-    "twig-drupal-filters": "^0.2.1",
+    "kalastatic": "4.1.0-alpha.1",
+    "twig-drupal-filters": "^2.0.0",
     "bootstrap-sass": "^3.3.7"
   }
 }

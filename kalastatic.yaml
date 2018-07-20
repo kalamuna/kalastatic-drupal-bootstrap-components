@@ -8,7 +8,7 @@ base: "./"
 destination: "build/kalastatic"
 
 # What BrowserSync will consider the start page.
-bsIndex: kalastatic/browsersync-redirect.html
+bsIndex: browsersync-redirect.html
 
 # What BrowserSync will consider the web root.
 bsWebroot: build
@@ -44,8 +44,7 @@ pluginOpts:
 # Settings for the Styleguide
 kss:
   css:
-    - "../base/main.css"
-  builder: "node_modules/kstat-kss-builder"
+    - "/kalastatic/styles/base/main.css"
   js:
     - "http://vjs.zencdn.net/6.2.0/video.js"
   title: "Kalastatic Components"
