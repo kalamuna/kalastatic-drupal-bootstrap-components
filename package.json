@@ -28,8 +28,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
-    "font-awesome": "^4.7.0",
-    "fontawesome": "^4.7.2",
+    "fontawesome-svg-twig": "^1.0.0",
     "jquery": "^3.2.1",
     "jquery-once": "^2.2.0",
     "kalastatic-twig-filters": "^0.2.0",
